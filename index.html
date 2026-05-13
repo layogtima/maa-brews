@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Maa Brews — From My Mother, to Me, and Now to You</title>
+    <meta name="description"
+        content="Fresh homemade summer drinks by MaaBrews. Small-batch, naturally fermented, probiotic drinks made with Maa's special recipe.">
+    <meta name="theme-color" content="#4A0E1E">
+    <link rel="icon" type="image/png" href="images/maa-brews-logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: { DEFAULT: '#FDF6EE', dark: '#F0E0CC' },
+                        burgundy: { DEFAULT: '#6B1D2A', light: '#8B3A4A', dark: '#4A0E1E' },
+                    },
+                    fontFamily: {
+                        display: ['Playfair Display', 'Georgia', 'serif'],
+                        body: ['DM Sans', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-burgundy-dark font-body text-cream">
+
+    <div id="app">
+
+        <!-- ═══════════════════════════════════════ -->
+        <!-- DESKTOP LEFT PANEL (hidden on mobile)  -->
+        <!-- ═══════════════════════════════════════ -->
+        <aside
+            class="hidden lg:flex fixed top-0 left-0 bottom-0 w-[400px] xl:w-[440px] flex-col items-center bg-burgundy-dark border-r border-white/10 px-8 xl:px-10 py-10 overflow-y-auto no-scrollbar z-40">
+
+            <img src="images/maa-brews-logo.png" alt="Maa Brews"
+                class="w-28 h-28 xl:w-32 xl:h-32 rounded-full border-2 border-cream/10 shadow-2xl">
+            <h2 class="font-display text-3xl font-bold text-cream mt-5 tracking-tight">Maa Brews</h2>
+            <p class="text-sm text-cream/35 mt-1">The Balcony Fermentery &middot; Est. 2024</p>
+
+            <div class="w-12 border-t border-cream/10 my-6"></div>
+
+            <p class="font-display text-xl text-cream/70 italic leading-relaxed px-2">
+                &ldquo;From my mother, to me,<br>and now to you.&rdquo;
+            </p>
+
+            <img src="images/maa-brews-banner-for-buttermilk-chach-lassi-raw-mango-drink-held-by-maa-hand-in-a-tray.jpeg"
+                alt="Maa's handcrafted drinks on a tray"
+                class="w-full rounded-2xl mt-6 h-44 xl:h-52 object-cover border border-white/10">
+
+            <p class="text-sm text-cream/45 leading-relaxed mt-6 px-1 text-center">
+                Made using my mom's special recipe &mdash; naturally fermented in sunlight with carrots, beets, and
+                simple kitchen spices. No preservatives. No artificial colours. Just probiotic goodness.
+            </p>
+
+            <div class="flex items-center gap-3 text-[12px] text-cream/25 font-semibold tracking-wider uppercase mt-5">
+                <span>Handcrafted</span>
+                <span class="w-1 h-1 bg-cream/20 rounded-full"></span>
+                <span>Sun-Fermented</span>
+                <span class="w-1 h-1 bg-cream/20 rounded-full"></span>
+                <span>Gut-Positive</span>
+            </div>
+
+            <a href="https://chat.whatsapp.com/G4zIBXN6WGVApyFC5lvtu2" target="_blank" rel="noopener"
+                class="inline-flex items-center gap-2 mt-6 px-5 py-2.5 rounded-full bg-cream/10 hover:bg-cream/15 transition-colors text-cream/50 text-sm font-medium">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                Join our WhatsApp group
+            </a>
+
+            <p class="text-[11px] text-cream/15 mt-auto pt-8">Made with love, patience &amp; a little bit of science</p>
+        </aside>
+
+        <!-- ═══════════════════════════════════ -->
+        <!-- MAIN CONTENT (right side on desktop) -->
+        <!-- ═══════════════════════════════════ -->
+        <div class="lg:ml-[400px] xl:ml-[440px]">
+
+            <!-- ═══ MOBILE HEADER ═══ -->
+            <header class="lg:hidden sticky top-0 z-50 bg-burgundy-dark/95 backdrop-blur-sm border-b border-white/10">
+                <div class="max-w-xl mx-auto flex items-center justify-between px-4 py-2.5">
+                    <div class="flex items-center gap-3">
+                        <img src="images/maa-brews-logo.png" alt="Maa Brews"
+                            class="w-11 h-11 rounded-full object-cover shadow-sm border border-cream/20">
+                        <div>
+                            <h1 class="font-display text-xl font-bold text-cream leading-none tracking-tight">Maa Brews
+                            </h1>
+                            <p class="text-[13px] text-cream/40 mt-0.5">The Balcony Fermentery &middot; Est. 2024</p>
+                        </div>
+                    </div>
+                    <button @click="showCart = true"
+                        class="relative p-2.5 -mr-1 rounded-full hover:bg-white/10 active:bg-white/15 transition-colors"
+                        aria-label="View cart">
+                        <svg class="w-6 h-6 text-cream" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            stroke-width="1.8">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg>
+                        <span v-if="cartCount > 0" :key="cartCount"
+                            class="cart-badge absolute -top-0.5 -right-0.5 bg-cream text-burgundy-dark text-[12px] min-w-[22px] h-[22px] rounded-full flex items-center justify-center font-bold px-1">
+                            {{ cartCount }}
+                        </span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- ═══ MOBILE HERO ═══ -->
+            <section class="lg:hidden relative overflow-hidden">
+                <div class="relative h-52 sm:h-64">
+                    <img src="images/maa-brews-banner-for-buttermilk-chach-lassi-raw-mango-drink-held-by-maa-hand-in-a-tray.jpeg"
+                        alt="Maa's handcrafted drinks served on a wooden tray"
+                        class="w-full h-full object-cover object-center">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-burgundy-dark via-burgundy-dark/40 to-transparent">
+                    </div>
+                    <div class="absolute bottom-5 left-5 right-5">
+                        <p class="font-display text-2xl sm:text-3xl text-cream font-bold leading-snug">
+                            From my mother, to me,<br>and now to you.
+                        </p>
+                        <p class="text-base text-cream/60 mt-1.5 font-medium">Fresh homemade drinks, made with love</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ═══ CATEGORY TABS ═══ -->
+            <nav class="sticky top-[58px] lg:top-0 z-40 bg-burgundy-dark/95 backdrop-blur-sm border-b border-white/10">
+                <div
+                    class="max-w-xl lg:max-w-2xl mx-auto flex gap-2 px-4 lg:px-6 py-2.5 lg:py-3 overflow-x-auto no-scrollbar">
+                    <button v-for="cat in categories" :key="cat.id" @click="activeCategory = cat.id" :class="[
+                            'px-5 py-2 rounded-full text-sm lg:text-base font-semibold whitespace-nowrap transition-all duration-200',
+                            activeCategory === cat.id
+                                ? 'bg-cream text-burgundy-dark shadow-sm'
+                                : 'bg-white/10 text-cream/60 hover:bg-white/15 active:bg-white/20'
+                        ]">
+                        {{ cat.emoji }} {{ cat.label }}
+                    </button>
+                </div>
+            </nav>
+
+            <!-- ═══ USP STRIP (mobile only) ═══ -->
+            <div class="lg:hidden max-w-xl mx-auto px-4 pt-6 pb-3">
+                <div class="flex items-center justify-center gap-3 text-[13px] text-cream/40 font-medium">
+                    <span>No Preservatives</span>
+                    <span class="w-1 h-1 bg-cream/30 rounded-full"></span>
+                    <span>Probiotic</span>
+                    <span class="w-1 h-1 bg-cream/30 rounded-full"></span>
+                    <span>Small-Batch</span>
+                </div>
+            </div>
+
+            <!-- ═══ MENU ═══ -->
+            <main class="px-4 lg:px-6 pt-4 lg:pt-6 pb-6 max-w-xl lg:max-w-2xl mx-auto">
+                <div class="flex flex-col gap-3 lg:gap-4">
+                    <div v-for="product in filteredProducts" :key="product.id"
+                        class="product-card bg-cream rounded-2xl shadow-sm overflow-hidden border border-cream-dark/20">
+                        <div class="flex">
+                            <!-- Product Image -->
+                            <div class="w-[115px] sm:w-[135px] lg:w-[160px] flex-shrink-0 relative overflow-hidden">
+                                <img v-if="product.image" :src="product.image" :alt="product.name"
+                                    class="w-full h-full object-cover min-h-[140px] lg:min-h-[155px]" loading="lazy">
+                                <div v-else
+                                    class="w-full h-full min-h-[140px] lg:min-h-[155px] flex items-center justify-center bg-burgundy/5">
+                                    <span class="text-5xl">{{ product.emoji }}</span>
+                                </div>
+                                <span v-if="product.tag"
+                                    class="absolute top-2 left-2 bg-burgundy text-cream text-[11px] px-2.5 py-0.5 rounded-full font-semibold tracking-wide uppercase">
+                                    {{ product.tag }}
+                                </span>
+                            </div>
+                            <!-- Product Info -->
+                            <div class="flex-1 p-4 lg:p-5 flex flex-col justify-between min-w-0">
+                                <div>
+                                    <h3 class="font-display text-lg font-bold text-burgundy-dark leading-tight">{{
+                                        product.name }}</h3>
+                                    <p v-if="product.nameHi" class="text-[13px] text-burgundy/40 mt-0.5 font-medium">{{
+                                        product.nameHi }}</p>
+                                    <p class="text-sm text-burgundy-dark/55 mt-1.5 leading-relaxed line-clamp-2">{{
+                                        product.description }}</p>
+                                </div>
+                                <div class="flex items-end justify-between mt-3 gap-2">
+                                    <div>
+                                        <div class="flex items-baseline gap-1">
+                                            <span class="font-bold text-burgundy text-lg">&#8377;{{ product.price
+                                                }}</span>
+                                            <span class="text-[13px] text-burgundy-dark/30">/ {{ product.size }}</span>
+                                        </div>
+                                        <p v-if="product.returnPrice"
+                                            class="text-[12px] text-burgundy/50 mt-0.5 font-medium">
+                                            &#8377;{{ product.returnPrice }} with bottle return
+                                        </p>
+                                    </div>
+                                    <!-- Quantity Controls -->
+                                    <div v-if="getQty(product.id) === 0" class="flex-shrink-0">
+                                        <button @click="addToCart(product)"
+                                            class="add-btn bg-burgundy text-cream px-5 py-2 rounded-full text-sm font-bold tracking-wide hover:bg-burgundy-dark active:scale-95 transition-all shadow-sm cursor-pointer">
+                                            ADD
+                                        </button>
+                                    </div>
+                                    <div v-else
+                                        class="flex items-center bg-burgundy rounded-full overflow-hidden flex-shrink-0 shadow-sm">
+                                        <button @click="decrement(product.id)"
+                                            class="w-10 h-10 flex items-center justify-center text-cream hover:bg-burgundy-light transition-colors text-xl leading-none cursor-pointer"
+                                            aria-label="Remove one">
+                                            &minus;
+                                        </button>
+                                        <span class="w-6 text-center text-cream font-bold text-base tabular-nums">{{
+                                            getQty(product.id) }}</span>
+                                        <button @click="addToCart(product)"
+                                            class="w-10 h-10 flex items-center justify-center text-cream hover:bg-burgundy-light transition-colors text-xl leading-none cursor-pointer"
+                                            aria-label="Add one more">
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- ═══ BOTTLE RETURN BANNER ═══ -->
+            <section class="px-4 lg:px-6 pb-8 max-w-xl lg:max-w-2xl mx-auto">
+                <div class="bg-cream/10 border border-cream/10 rounded-2xl p-4 lg:p-5 flex items-start gap-3">
+                    <span class="text-xl mt-0.5">&#9851;&#65039;</span>
+                    <div>
+                        <p class="text-base font-semibold text-cream">Return your bottles!</p>
+                        <p class="text-sm text-cream/50 mt-0.5 leading-relaxed">Bring back your Kanji or Beet Kwass
+                            bottles and get your next order at a discounted price.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ═══ STORY (mobile text + video on all) ═══ -->
+            <section class="px-4 lg:px-6 pb-8 max-w-xl lg:max-w-2xl mx-auto">
+                <div class="rounded-2xl overflow-hidden shadow-md mb-5 border border-white/10">
+                    <video autoplay loop muted playsinline class="w-full h-100 object-cover">
+                        <source src="videos/fermenting-kanji-loop.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <!-- Story text card — mobile only (left panel has it on desktop) -->
+                <div class="lg:hidden bg-cream rounded-2xl p-6 text-center">
+                    <h2 class="font-display text-3xl font-bold text-burgundy mb-3">The Balcony Fermentery</h2>
+                    <p class="text-base text-burgundy-dark/65 leading-relaxed mb-3">
+                        Made using my mom's special recipe &mdash; naturally fermented in sunlight with carrots, beets,
+                        and simple kitchen spices. Every bottle is a small-batch labor of love from our balcony.
+                    </p>
+                    <p class="text-base text-burgundy-dark/65 leading-relaxed mb-4">
+                        No artificial colours. No artificial flavours. No preservatives. Just probiotic goodness that's
+                        genuinely good for your gut.
+                    </p>
+                    <div
+                        class="flex items-center justify-center gap-3 text-[13px] text-burgundy/40 font-semibold tracking-wide uppercase">
+                        <span>Handcrafted</span>
+                        <span class="w-1 h-1 bg-burgundy/30 rounded-full"></span>
+                        <span>Sun-Fermented</span>
+                        <span class="w-1 h-1 bg-burgundy/30 rounded-full"></span>
+                        <span>Gut-Positive</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ═══ GALLERY SCROLLER ═══ -->
+            <section class="pb-10 lg:pb-14 overflow-hidden">
+                <div class="gallery-track">
+                    <img src="images/maa-brews-banner-shadow-hands-reaching-for-kanji-and-kvass.jpeg" alt=""
+                        class="gallery-img">
+                    <img src="images/maa-brews-photo-kanji-with-bottle-on-top.jpeg" alt="" class="gallery-img">
+                    <img src="images/maa-brews-banner-trap-me-glass.jpeg" alt="" class="gallery-img">
+                    <img src="images/maa-brews-photo-bottle-and-half-glass-kvass-on-work-desk.jpeg" alt=""
+                        class="gallery-img">
+                    <img src="images/maa-brews-photo-kanji-bottle-held-by-maa-in-hand.jpeg" alt="" class="gallery-img">
+                    <img src="images/maa-brews-primary-banner.jpeg" alt="" class="gallery-img">
+                    <img src="images/maa-brews-banner-for-buttermilk-chach-lassi-raw-mango-drink.jpeg" alt=""
+                        class="gallery-img">
+                    <img src="images/maa-brews-banner-shadow-hands-reaching-for-kanji-and-kvass.jpeg" alt=""
+                        class="gallery-img">
+                    <img src="images/maa-brews-photo-kanji-with-bottle-on-top.jpeg" alt="" class="gallery-img">
+                    <img src="images/maa-brews-banner-trap-me-glass.jpeg" alt="" class="gallery-img">
+                    <img src="images/maa-brews-photo-bottle-and-half-glass-kvass-on-work-desk.jpeg" alt=""
+                        class="gallery-img">
+                    <img src="images/maa-brews-photo-kanji-bottle-held-by-maa-in-hand.jpeg" alt="" class="gallery-img">
+                    <img src="images/maa-brews-primary-banner.jpeg" alt="" class="gallery-img">
+                    <img src="images/maa-brews-banner-for-buttermilk-chach-lassi-raw-mango-drink.jpeg" alt=""
+                        class="gallery-img">
+                </div>
+            </section>
+
+            <!-- ═══ FOOTER (mobile only) ═══ -->
+            <footer class="lg:hidden bg-black text-cream/80 pt-10 pb-36 px-4 text-center">
+                <img src="images/maa-brews-logo.png" alt="Maa Brews"
+                    class="w-36 h-36 sm:w-44 sm:h-44 rounded-full mx-auto mb-5 border-2 border-cream/10 shadow-2xl">
+                <p class="font-display text-2xl text-cream tracking-tight">Maa Brews</p>
+                <p class="text-sm text-cream/35 mt-1">Established 2024 &middot; The Balcony Fermentery</p>
+
+                <a href="https://chat.whatsapp.com/G4zIBXN6WGVApyFC5lvtu2" target="_blank" rel="noopener"
+                    class="inline-flex items-center gap-2 mt-6 px-6 py-3 rounded-full bg-cream/10 hover:bg-cream/15 transition-colors text-cream/60 text-base font-medium">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    Join our WhatsApp group
+                </a>
+
+                <p class="text-[12px] text-cream/20 mt-8">Made with love, patience &amp; a little bit of science</p>
+            </footer>
+
+        </div><!-- /right content -->
+
+        <!-- ═══ CART BOTTOM SHEET ═══ -->
+        <teleport to="body">
+            <transition name="cart-overlay">
+                <div v-if="showCart" class="fixed inset-0 lg:left-[400px] xl:left-[440px] z-[100]">
+                    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" @click="showCart = false"></div>
+                    <transition name="cart-sheet" appear>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 bg-cream rounded-t-3xl max-h-[85vh] flex flex-col shadow-2xl lg:max-w-2xl lg:mx-auto">
+                            <!-- Handle bar -->
+                            <div class="flex justify-center pt-3 pb-1 cursor-pointer" @click="showCart = false">
+                                <div class="w-10 h-1 bg-burgundy/15 rounded-full"></div>
+                            </div>
+                            <!-- Cart header -->
+                            <div class="px-5 pb-3 flex items-center justify-between">
+                                <h2 class="font-display text-2xl font-bold text-burgundy">Your Order</h2>
+                                <button @click="showCart = false"
+                                    class="p-1.5 rounded-full hover:bg-burgundy/10 transition-colors text-burgundy/30 hover:text-burgundy/60 cursor-pointer"
+                                    aria-label="Close cart">
+                                    <svg class="w-6 h-6" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <!-- Cart items -->
+                            <div class="flex-1 overflow-y-auto px-5 py-3 border-t border-burgundy/10">
+                                <div v-if="cartItems.length === 0" class="text-center py-16">
+                                    <p class="text-5xl mb-3">&#129387;</p>
+                                    <p class="text-burgundy/50 font-semibold text-base">Your tray is empty</p>
+                                    <p class="text-sm text-burgundy/30 mt-1">Add some of Maa's goodies!</p>
+                                </div>
+                                <div v-else class="space-y-2.5">
+                                    <div v-for="item in cartItems" :key="item.product.id"
+                                        class="flex items-center gap-3 bg-white rounded-xl p-3 border border-burgundy/5">
+                                        <div class="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0">
+                                            <img v-if="item.product.image" :src="item.product.image"
+                                                :alt="item.product.name" class="w-full h-full object-cover">
+                                            <div v-else
+                                                class="w-full h-full flex items-center justify-center text-xl bg-burgundy/5">
+                                                {{ item.product.emoji }}</div>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <p class="font-semibold text-base text-burgundy-dark truncate">{{
+                                                item.product.name }}</p>
+                                            <p class="text-[13px] text-burgundy/40">&#8377;{{ item.product.price }}
+                                                &times; {{ item.qty }}</p>
+                                        </div>
+                                        <div
+                                            class="flex items-center bg-burgundy/10 rounded-full overflow-hidden flex-shrink-0">
+                                            <button @click="decrement(item.product.id)"
+                                                class="w-8 h-8 flex items-center justify-center text-burgundy hover:bg-burgundy/20 transition-colors font-bold text-base cursor-pointer">&minus;</button>
+                                            <span
+                                                class="w-5 text-center text-burgundy font-bold text-sm tabular-nums">{{
+                                                item.qty }}</span>
+                                            <button @click="addToCart(item.product)"
+                                                class="w-8 h-8 flex items-center justify-center text-burgundy hover:bg-burgundy/20 transition-colors font-bold text-base cursor-pointer">+</button>
+                                        </div>
+                                        <p class="font-bold text-base text-burgundy w-14 text-right tabular-nums">
+                                            &#8377;{{ item.product.price * item.qty }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Cart footer -->
+                            <div v-if="cartItems.length > 0"
+                                class="px-5 pt-4 pb-6 border-t border-burgundy/10 bg-burgundy/5">
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="font-medium text-burgundy-dark/70 text-base">Total</span>
+                                    <span class="font-display text-3xl font-bold text-burgundy">&#8377;{{ cartTotal
+                                        }}</span>
+                                </div>
+                                <button @click="orderOnWhatsApp"
+                                    class="w-full bg-burgundy text-cream py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-2.5 hover:bg-burgundy-dark active:scale-[0.98] transition-all shadow-lg shadow-burgundy/25 cursor-pointer">
+                                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                                    </svg>
+                                    Order on WhatsApp
+                                </button>
+                                <p class="text-[12px] text-center text-burgundy/35 mt-2.5">Opens WhatsApp to confirm
+                                    your order with Maa</p>
+                            </div>
+                        </div>
+                    </transition>
+                </div>
+            </transition>
+        </teleport>
+
+        <!-- ═══ STICKY CART BAR ═══ -->
+        <transition name="cart-bar">
+            <div v-if="cartCount > 0 && !showCart"
+                class="fixed bottom-0 left-0 lg:left-[400px] xl:left-[440px] right-0 z-50 p-3 sm:p-4 pointer-events-none"
+                style="background: linear-gradient(to top, #4A0E1E 60%, transparent);">
+                <button @click="showCart = true"
+                    class="pointer-events-auto w-full max-w-xl lg:max-w-2xl mx-auto bg-cream text-burgundy-dark py-4 px-5 rounded-2xl flex items-center justify-between shadow-xl shadow-black/30 hover:bg-cream-dark active:scale-[0.98] transition-all cursor-pointer">
+                    <div class="flex items-center gap-2.5">
+                        <span
+                            class="bg-burgundy text-cream min-w-[26px] h-[26px] rounded-full flex items-center justify-center text-sm font-bold px-1.5 tabular-nums">{{
+                            cartCount }}</span>
+                        <span class="font-semibold text-base">{{ cartCount === 1 ? 'item' : 'items' }}</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="font-display text-xl font-bold tabular-nums">&#8377;{{ cartTotal }}</span>
+                        <svg class="w-5 h-5 opacity-50" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </transition>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
