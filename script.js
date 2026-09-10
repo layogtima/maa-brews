@@ -88,7 +88,7 @@ createApp({
                 nameHi: 'प्याज़ का अचार',
                 category: 'fermented',
                 description: 'Small onions fermented slow in brine until the sharpness turns tangy. Crunchy, gut-friendly, and good with every meal.',
-                size: '250g',
+                size: '150g',
                 price: 250,
                 returnPrice: null,
                 image: 'images/maa-brews-pickled-onions-held-in-hand.jpeg',
